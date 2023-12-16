@@ -27,12 +27,12 @@ editor: visual
 
 ## Описание шагов:
 
-1.  *Воспользуемся RStudio*
+1.  Воспользуемся RStudio.
 
-2.  Скачиваем пакет dplyr\
+2.  Скачиваем пакет dplyr.
     ![](screenshot/loading.png)
 
-3.  Проанализируем встроенный в пакет dplyr набор данных starwars
+3.  Проанализируем встроенный в пакет dplyr набор данных starwars.
 
 ```{r}
 library(dplyr)
@@ -66,13 +66,13 @@ starwars %>% distinct(species)
 length(unique(starwars$species))
 ```
 
-Вопрос 5.  Найти самого высокого персонажа
+Вопрос 5.  Найти самого высокого персонажа.
 
 ```{r}
 starwars %>% arrange(desc(height)) %>% slice(1:1) %>% select(name)
 ```
 
-Вопрос 6.  Найти всех персонажей ниже 170
+Вопрос 6.  Найти всех персонажей ниже 170.
 
 ```{r}
 starwars %>% filter(height < 170) %>% pull(name)
@@ -90,7 +90,7 @@ starwars %>% mutate("ИМТ" = mass/(height*height)) %>% select(name,ИМТ)
 starwars %>% mutate("Вытянутость" = mass/height) %>% arrange(desc(Вытянутость)) %>% slice(1:10) %>% select(name,Вытянутость)
 ```
 
-Вопрос 9. Найти средний возраст персонажей каждой расы вселенной Звездных войн
+Вопрос 9. Найти средний возраст персонажей каждой расы вселенной Звездных войн.
 
 ```{r}
 starwars %>%  group_by(species) %>% filter(!is.na(birth_year)) %>% summarise('Среднее' = mean(birth_year)) %>% select(species, Среднее) 
@@ -102,7 +102,7 @@ starwars %>%  group_by(species) %>% filter(!is.na(birth_year)) %>% summarise('С
 starwars %>% filter(!is.na(eye_color)) %>%  group_by(eye_color) %>% summarise('Колличество'= n()) %>% arrange(desc(Колличество)) %>% select(eye_color, Колличество) %>% slice(1)
 ```
 
-Вопрос 11. Подсчитать среднюю длину имени в каждой расе вселенной Звездных войн
+Вопрос 11. Подсчитать среднюю длину имени в каждой расе вселенной Звездных войн.
 
 ```{r}
 starwars %>% mutate(len=nchar(name))  %>% group_by(species) %>% summarise('mean' = mean(len)) %>% select(species,mean)
