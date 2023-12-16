@@ -31,7 +31,7 @@
 
 5.  Обогощаем данные.
 
-Работает с пакетом tidyverse.
+Работа с пакетом tidyverse.
 
 ``` r
 library(tidyverse)
