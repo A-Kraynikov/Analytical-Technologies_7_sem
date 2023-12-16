@@ -29,7 +29,7 @@ editor: visual
 
 1.  Воспользуемся RStudio.
 
-2.  Скачиваем пакет dplyr.
+2.  Скачиваем пакет dplyr.\
     ![](screenshot/loading.png)
 
 3.  Проанализируем встроенный в пакет dplyr набор данных starwars.
