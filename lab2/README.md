@@ -28,7 +28,7 @@
 
 1.  Воспользуемся RStudio.
 
-2.  Скачиваем пакет dplyr.
+2.  Скачиваем пакет dplyr.\
     <img src="screenshot/loading.png" width="407" />
 
 3.  Проанализируем встроенный в пакет dplyr набор данных starwars.
