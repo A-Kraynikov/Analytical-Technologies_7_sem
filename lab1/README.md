@@ -178,7 +178,7 @@ z*2+1000
 
 Сообщение о выполнении первого курса:
 
-<img src="screenshot/End1.png" data-fig-align="center" />
+<img src="screenshot/end1.png" data-fig-align="center" />
 
 Конец первого урока.
 
@@ -195,7 +195,7 @@ file.info(“mytest.R”)
 
 getwd()
 
-    [1] "C:/PracZahar/Zahar"
+    [1] "C:/Prac/Authentication"
 
     | Now take a look at objects that are in your workspace using ls().
 
@@ -301,7 +301,7 @@ setwd(old.dir)
 
 Сообщение об окончании второго курса:
 
-![](screenshot/End2.png)
+![](screenshot/end2.png)
 
 5.  Третий курс: Sequences of Numbers.
 
